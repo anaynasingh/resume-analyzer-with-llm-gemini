@@ -136,8 +136,8 @@ def generate_response(prompt_input):
     return output
 
 
-st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
-st.sidebar.button('Generate Report', on_click=generate_report)
+#st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+#st.sidebar.button('Generate Report', on_click=generate_report)
 
 
 def get_feedback():
