@@ -75,6 +75,4 @@ This application automates the process of resume review by:
 
 Contributions are welcome! If you find a bug or have an idea for a new feature, please open an issue or submit a pull request.
 
-## License
 
-[MIT License](LICENSE) (Replace with your actual license if you have one)
