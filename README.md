@@ -1,5 +1,3 @@
-# resume-analyzer-with-llm-gemini
- 
 # Resume Analyzer with LLM (Gemini)
 
 This project is a Streamlit application that utilizes Google's Gemini LLM to analyze resumes against job descriptions, providing tailored feedback and improvement suggestions.
