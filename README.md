@@ -23,11 +23,14 @@ This application automates the process of resume review by:
 
 ## Technologies Used
 
-* **Streamlit:** For building the web application interface.
-* **Langchain:** For managing LLM interactions.
-* **Google Gemini API:** For generating intelligent feedback.
-* **PDF Processing Libraries (pypdf, pdf2image):** For extracting text from PDF resumes.
-* **Python:** For the application's backend logic.
+* **Google Gemini API:** Provides intelligent text analysis and generation for resume evaluation, feedback, and skill gap analysis.
+* **Langchain:** For orchestrating and managing the interactions with Large Language Models (LLMs), streamlining prompt engineering, response handling, and complex workflow integration.
+* **Hugging Face Transformers (BERT):** Used for generating text embeddings, enabling semantic similarity comparisons between resumes and job descriptions.
+* **Streamlit:** For building the interactive web application interface, enabling easy deployment and user interaction, specifically for the chat application feature.
+* **Python:** The primary programming language, providing the flexibility and extensive libraries necessary for data processing, LLM integration, application logic, and OCR implementation.
+* **OCR (Optical Character Recognition):** Implemented using the Tesseract library, enabling the extraction of text from image-based resumes.
+* **Git:** For version control, facilitating collaboration and tracking changes throughout the project's development.
+
 
 ## Setup
 
@@ -59,7 +62,6 @@ This application automates the process of resume review by:
 
         ```toml
         GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
-        GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY" # if needed
         ```
 
 5.  **Run the Application:**
@@ -68,15 +70,6 @@ This application automates the process of resume review by:
     streamlit run streamlit/resume_suggestions.py
     ```
 
-## Deployment
-
-This application is designed to be deployed on Streamlit Cloud.
-
-1.  **Create a GitHub Repository:** Push your code to a GitHub repository.
-2.  **Create a Streamlit Cloud Account:** If you don't have one, create an account at [streamlit.io/cloud](https://streamlit.io/cloud).
-3.  **Connect to Your Repository:** In Streamlit Cloud, connect to your GitHub repository and select the branch containing your application.
-4.  **Add Secrets:** Add your `GEMINI_API_KEY` and `GOOGLE_API_KEY` to the Streamlit Cloud app's secrets.
-5.  **Deploy:** Deploy your application.
 
 ## Contributing
 
