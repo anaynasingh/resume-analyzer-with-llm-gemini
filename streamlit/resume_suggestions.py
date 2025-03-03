@@ -7,8 +7,8 @@ from langchain_core.messages import SystemMessage
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
-GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
 
 
 from constants import GEMINI_API_KEY, GEMINI_MODEL_NAME, TEMPLATE_CONTENT, comparison_prompt, resume_analysis_prompt, \
